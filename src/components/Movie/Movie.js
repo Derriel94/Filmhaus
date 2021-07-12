@@ -14,7 +14,7 @@ class Movie extends React.Component {
 		return(
 			<div className="Movie">
 				<div className="img-contatiner">
-					<img src={movie.imgSrc} />
+					<img src='{movie.imgSrc}' alt='Image of tanlged thumbnail' />
 						<h2>{movie.name}</h2>
 				</div>
 				<div className="info-containter">
