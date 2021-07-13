@@ -1,16 +1,11 @@
 import React from 'react';
 import './Movie.css';
 
-const movie = {
-	'imgSrc': '../Movie/tangled.jpg',
-	'name': 'Tangled',
-	'category': 'Animation',
-	'producer': 'Disney',
-	'characters': 'Repunzel, Flynn Rider, Pascal, Maximus',
-};
 
 class Movie extends React.Component {
+
 	render() {
+		const { movie } = this.props;
 		return(
 			<div className="Movie">
 				<div className="img-contatiner">
