@@ -4,7 +4,7 @@ import MovieList from '../MovieList/MovieList';
 import SearchBar from '../SearchBar/SearchBar';
 
 const movie = {
-	'imgSrc': '../Movie/tangled.jpg',
+	'imgSrc': './tangled.jpg',
 	'name': 'Tangled',
 	'category': 'Animation',
 	'producer': 'Disney',

@@ -1,0 +1,33 @@
+.SearchBar {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-image: url(./background-filmhaus.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+  	height: 25rem;
+  	margin-bottom: 20px;
+  	border: 2px solid black;
+}
+
+.SearchBar .SearchBar-fields input{
+	margin-top: 150px;
+	margin-bottom: 50px;
+	border: 2px solid pink;
+}
+
+
+.SearchBar .SearchBar-submit a{
+	font-weight: bolder;
+	text-decoration: none;
+	color: pink;
+	border: 2px solid pink;
+}
+
+.SearchBar .SearchBar-submit a:hover {
+	font-weight: bolder;
+	text-decoration: none;
+	color: grey;
+	background-color: pink;
+	border: 2px solid grey;
+}
