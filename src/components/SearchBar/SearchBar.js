@@ -7,20 +7,25 @@ class SearchBar extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {term:''};
-		this.sortByOptions = {
-			'Best Match': 'best_match',
-			'Hightest Rated': 'rating',
-			'Most Reviewed': 'review_count',
-		};
+		this.handleTermChange = this.handleTermChange.bind(this);
+		this.handleSearch = this.handleSearch.bind(this);
+
+	}
+	handleTermChange(event) {
+		this.setState({term: event.target.value});
+	}
+	handleSearch(event) {
+		this.props.searchTmdb(this.state.term);
+		event.preventDefault();
 	}
 	render() {
 		return (
 		<div className="SearchBar">
 		  <div className="SearchBar-fields">
-		    <input placeholder="Movies" />
+		    <input onChange={this.handleTermChange} placeholder="Movies" />
 		  </div>
 		  <div className="SearchBar-submit">
-		    <a href="">Find Your Movie!</a>
+		    <button onClick={this.handleSearch}>Find Your Movie!</button>
 		  </div>
 		</div>
 		);
